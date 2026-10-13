@@ -1,0 +1,12 @@
+{
+  "name": "harbor-field-shopify-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "build": "node -e \"console.log('Static workflow interface ready for Vercel')\""
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

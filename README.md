@@ -14,5 +14,13 @@ Production: https://harbor-field-shopify-workflow.vercel.app
 ## Stack
 
 - HTML and CSS
-- GitHub Pages hosting
+- Vercel hosting
+
+## Local Operations
+
+```bash
+npm run start
+```
+
+The workflow board is served as a static operations interface and can be deployed directly through Vercel.
 
