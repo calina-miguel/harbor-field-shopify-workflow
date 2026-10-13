@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor & Field Shopify Release Workflow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Harbor &amp; Field Shopify Release Workflow</h1>
+    <p>A practical development workflow board for theme pull, local preview, linting, deploy, and QA handoff.</p>
+  </header>
+  <main>
+    <section class="terminal" aria-label="Shopify CLI workflow transcript">
+      <div class="bar"><span></span><span></span><span></span></div>
+      <pre><code>$ shopify theme pull
+$ shopify theme dev --store harbor-field.myshopify.com
+$ shopify theme check
+$ shopify theme push --unpublished
+$ shopify theme share</code></pre>
+    </section>
+    <section class="board" aria-label="Workflow steps">
+      <article>
+        <span>01</span>
+        <h2>Sync</h2>
+        <p>Pull production theme files into a feature branch before editing.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>Develop</h2>
+        <p>Run local preview with hot reload and test storefront states.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>Validate</h2>
+        <p>Run Theme Check and review Liquid, schema, translation, and asset issues.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <h2>Publish safely</h2>
+        <p>Push as unpublished, share preview links, then promote after approval.</p>
+      </article>
+    </section>
+    <section class="checklist">
+      <h2>Release checklist</h2>
+      <label><input type="checkbox"> Theme Check passes</label>
+      <label><input type="checkbox"> Cart, search, collection, and product templates reviewed</label>
+      <label><input type="checkbox"> Preview link approved by stakeholder</label>
+      <label><input type="checkbox"> Rollback theme ID documented</label>
+    </section>
+  </main>
+</body>
+</html>
